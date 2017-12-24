@@ -5,14 +5,16 @@ import com.igli.backend.models.UserModel
 import com.igli.backend.models.WomenModel
 import com.mongodb.BasicDBObject
 import com.mongodb.MongoClient
+import com.mongodb.MongoClientURI
 import org.springframework.stereotype.Component
 import java.util.*
 
 @Component
 class WomenTable {
 
-    private var mongoClient = MongoClient("localhost")
-    private var igliiDatabase = mongoClient.getDB("igliiDatabase")
+    private var uri = MongoClientURI("mongodb://igliiDBuser:iglii@ds131237.mlab.com:31237/iglii_database")
+    private var mongoClient = MongoClient(uri)
+    private var igliiDatabase = mongoClient.getDB("iglii_database")
     private var womenCollection = igliiDatabase.getCollection("WomenCollection")
 
     private fun getMap(womenModel: WomenModel) : Map<String, Any>{

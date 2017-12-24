@@ -5,15 +5,19 @@ import com.igli.backend.models.QueryResponse
 import com.igli.backend.models.UserModel
 import com.mongodb.BasicDBObject
 import com.mongodb.MongoClient
+import com.mongodb.MongoClientURI
 import org.springframework.stereotype.Component
 
 @Component
 class UserTable {
 
-    //    private var uri = MongoClientURI("mongodb://user:user@ds119436.mlab.com:19436/api_db_rightcom")
-//    private var mongoClient = MongoClient(uri)
-    private var mongoClient = MongoClient("localhost")
-    private var igliiDatabase = mongoClient.getDB("igliiDatabase")
+
+    private var uri = MongoClientURI("mongodb://igliiDBuser:iglii@ds131237.mlab.com:31237/iglii_database")
+    private var mongoClient = MongoClient(uri)
+
+    //    mongodb://<dbuser>:<dbpassword>@ds131237.mlab.com:31237/iglii_database
+    //    private var mongoClient = MongoClient("localhost")
+    private var igliiDatabase = mongoClient.getDB("iglii_database")
     private var userCollection = igliiDatabase.getCollection("UserCollection")
 
     private var womenTable = WomenTable()

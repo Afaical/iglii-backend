@@ -5,6 +5,7 @@ import com.igli.backend.models.FertilisationDateModel
 import com.igli.backend.models.QueryResponse
 import com.mongodb.BasicDBObject
 import com.mongodb.MongoClient
+import com.mongodb.MongoClientURI
 import org.springframework.stereotype.Component
 import java.util.ArrayList
 import java.util.HashMap
@@ -12,8 +13,9 @@ import java.util.HashMap
 @Component
 class FertilisationDateTable {
 
-    private var mongoClient = MongoClient("localhost")
-    private var igliiDatabase = mongoClient.getDB("igliiDatabase")
+    private var uri = MongoClientURI("mongodb://igliiDBuser:iglii@ds131237.mlab.com:31237/iglii_database")
+    private var mongoClient = MongoClient(uri)
+    private var igliiDatabase = mongoClient.getDB("iglii_database")
     private var fertilisationDateCollection = igliiDatabase.getCollection("FertilisationDateCollection")
 
     private fun getMap(womenPseudo: String, datesDetails: ArrayList<BasicDBObject>) : Map<String, Any>{

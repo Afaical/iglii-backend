@@ -5,13 +5,15 @@ import com.igli.backend.models.QueryResponse
 import com.igli.backend.models.UserModel
 import com.mongodb.BasicDBObject
 import com.mongodb.MongoClient
+import com.mongodb.MongoClientURI
 import org.springframework.stereotype.Component
 
 @Component
 class AdviceTable {
 
-    private var mongoClient = MongoClient("localhost")
-    private var igliiDatabase = mongoClient.getDB("igliiDatabase")
+    private var uri = MongoClientURI("mongodb://igliiDBuser:iglii@ds131237.mlab.com:31237/iglii_database")
+    private var mongoClient = MongoClient(uri)
+    private var igliiDatabase = mongoClient.getDB("iglii_database")
     private var adviceCollection = igliiDatabase.getCollection("AdviceCollection")
 
     private fun getMap(advice: AdviceModel) : Map<String, Any>{
