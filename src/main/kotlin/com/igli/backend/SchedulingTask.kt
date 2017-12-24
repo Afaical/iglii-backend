@@ -43,8 +43,7 @@ class SchedulingTask {
     val API_URL_FCM = "https://fcm.googleapis.com/fcm/send"
     val userDeviceIdKey = "ciHYA5i5H9Y:APA91bF_cs-h_ooQI4Zb-hOim47RbTbDXvheC2WaaQnhtvIrmhVWQJTjbaxlIgLtgGXhtXNQsUTvwlrS7bDy8D79SdsQDqeTkyK1_xc1KExeeQYYuoEGg5KsSQ9NtgG7AgcxHB_iR132"
 
-//    @Scheduled(fixedDelay = 5000)
-    @Scheduled(cron = "0 43 16 * * *")
+    @Scheduled(cron = "0 0 7 * * *")
     fun getAllActualFertilisationDateFromServer() {
         val womenWillBeReceiveNotification = arrayListOf<WomenWillReceiveNotifModel>()
 
