@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04c39664-6c6a-4898-97c2-e4ed81208c5f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
+    <list default="true" id="04c39664-6c6a-4898-97c2-e4ed81208c5f" name="Default" comment="Remove sheduling annotation">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/App.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/App.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/SchedulingTask.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/SchedulingTask.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,8 +33,18 @@
       <file leaf-file-name="SchedulingTask.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/igli/backend/SchedulingTask.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="75">
+              <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/igli/backend/App.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -404,7 +415,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/models/FertilisationTextToNotifModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/models/AdviseModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/models/AdviceModel.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/App.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/models/DateDetailModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/Controller.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/models/FCMSendModel.kt" />
@@ -415,6 +425,7 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/database/FertilisationTextToNotifTable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/database/UserTable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/database/WomenTable.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/App.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/igli/backend/SchedulingTask.kt" />
       </list>
     </option>
@@ -702,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514149441717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajout du fichier Procfile">
+      <created>1514154860875</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514154860875</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -771,7 +789,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout de la connexion à la base de donnée sur mlab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la connexion à la base de donnée sur mlab" />
+    <MESSAGE value="Ajout du fichier Procfile" />
+    <MESSAGE value="Remove sheduling annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove sheduling annotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1032,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/igli/backend/App.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/igli/backend/models/FertilisationDateModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1149,10 +1162,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/igli/backend/App.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/igli/backend/SchedulingTask.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="75">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding />
         </state>
       </provider>
